@@ -1,0 +1,30 @@
+mFrame - the anti-framework
+---------------------------
+
+Alpha version - Being used by me for my clients, but still under development.
+
+Use MVC in websites that were previously designed by idiots :-P
+
+I am often asked to work on older websites designed by amatures.  I don't mean to sound snooty about it.  PHP has an easy learning curve, so any weekend programmer can get PHP into their site easily.  Professionals tend to use MVC frameworks so that they can rapidly develop sites that are scaleable. 
+
+Eventually, the owners of these PHP enabled websites call a professional for help.  They can't afford to completely re-work their website from scratch.  however I've grown accustomed to the efficency provided by the MVC (Model View Controller) PHP design pattern.  So, I've developed this anti-framework called "mFrame"
+
+Essentially, the user's exisiting HTML/PHP page becomes the "View".  mFrame handles the "Model" and "Controller" using an autoloading series of php 5.3+ classes.  Simply by requireing one or two lines of code at the start of your HTML/PHP page, you make that page a view.  Then, you will have to manually strip out all the PHP logic from that page and move it into the controller's __construct() method.
+
+For example:
+
+Lets say you're client already has an index.php page and they've mushed together all the php in the html. It's a giant monolithc pile of HTML, CSS, JavaScript, and PHP with no seperation.  
+
+- First, require the mFrame front door in index.php
+- Then make a controller with a class called index.
+- The index class's __construct() method should create all the template variables and store them as public static variables.
+- The index class's __construct() method should also handle any form submissions and form validation.
+- Then require that controller in the index.php
+- Make a new index()
+- Place controller data in index.php using <?php echo class::$somevariable ?>
+
+I will write more documentation later and provide examples.
+
+The Classes should follow Pear's naming conventions.  mFrame can easily autoload Pear modules in addition to the core modules and constructors.  There are also pre-made classes that handle form validation and database connections.  Currently, this only uses mysql or mysqli for the database connection via tha MattSQL class.  mFrame is just a quick solution to a common problem I've run into.
+
+Requires php 5.3 or above to make use of late static binding, autoload, etc.
