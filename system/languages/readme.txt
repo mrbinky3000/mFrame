@@ -1,0 +1,1 @@
+language files should be named lang.php and placed in a directory named after the language.
