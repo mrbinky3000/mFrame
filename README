@@ -16,7 +16,7 @@ For example:
 Lets say you're client already has an index.php page and they've mushed together all the php in the html. It's a giant monolithic pile of HTML, CSS, JavaScript, and PHP with no separation.  
 
 - First, require the mFrame front door in index.php
-- Then make a controller with a class called index.
+- Then make a controller with a class called index to match the name of the view page (index.php has a controller class called index)
 - The index class's __construct() method should create all the template variables and store them as public static variables.
 - The index class's __construct() method should also handle any form submissions and form validation.
 - Then require that controller in the index.php
