@@ -3,9 +3,7 @@
 // init and start up mFrame
 require_once('system/init_system.php');
 
-// call the controller for this page
-require_once('system/controllers/index_c.php');
-$o_index = new indexController();
+// no controllers for this page since it doesn't do anything.
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
