@@ -6,6 +6,8 @@ mFrame is different in that the "view" portion takes precedence and there is no 
 
 Is this as efficient as a traditional MVC?  Almost.  Is it easier for the less savvy to understand and edit?  Arguably so.
 
+Imagine if your front-end development team created "static" php files using a tool like [Middleman](https://github.com/middleman/middleman) and included mFrame on every page.  Rapid, dynamic prototyping!
+
 ##How To Use
 1. Create a stand-alone PHP page just like you did back when everyone partied like it was 1999.  This is now the view.
 2. Include the mFrame core and a controller class at the top of this page before anything else.
