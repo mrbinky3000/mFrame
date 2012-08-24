@@ -7,11 +7,11 @@ mFrame is different in that the "view" portion takes precedence and there is no 
 Is this as efficient as a traditional MVC?  Almost.  Is it easier for the less savvy to understand and edit?  Arguably so.
 
 ##How To Use
-1 Create a stand-alone PHP page like you did back when everyone partied like it was 1999.  This is now the view.
-2 Include the mFrame core and a controller class at the top of this page before anything else.
-3 The mFrame core calls a controller, model, and other resources as needed.
-4 Each page controller is a PHP5 class.  Output is stored as class properties.
-5 Stick the class properties into the stand-alone page ("the view") where needed.
+1. Create a stand-alone PHP page like you did back when everyone partied like it was 1999.  This is now the view.
+2. Include the mFrame core and a controller class at the top of this page before anything else.
+3. The mFrame core calls a controller, model, and other resources as needed.
+4. Each page controller is a PHP5 class.  Output is stored as class properties.
+5. Stick the class properties into the stand-alone page ("the view") where needed.
 
 ##Requires
 - PHP5.3 (Needed for late static binding and autoloading)
