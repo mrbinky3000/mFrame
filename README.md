@@ -19,7 +19,6 @@ Is this as efficient as a traditional MVC?  Almost.  Is it easier for the less s
 
 
 ##EXAMPLE
----------
 
 ###The "View"
 Here is your standard, Dreamweaver-or-whatever-friendly PHP page.  Front-end developers will like it because the whole DOM is in one spot and they can write and debug JavaScript easily.  Some clients will like it because they can open this file in their editor and tweak it without having to understand MVC frameworks, they just see something very familiar with minimal PHP.
@@ -158,3 +157,9 @@ class exampleController
 	
 }
 ```
+
+
+##About
+This anti-framework was written to test a theory of mine.  It's currently in alpha status but I've used it on my own for
+fun projects.  I'm continuing to refine stuff and automating common code tasks by creating new core classes and methods.
+I would love it if you would help the project along by forking and improving mFrame.
