@@ -1,17 +1,17 @@
 #mFrame
 
-mFrame is an "anti" MVC PHP Framework.   Every other PHP framework out there (as far as I know) uses a central core script paired with server-side redirection to make it look as if there are different URLS when in actuallity, everything goes through the core.  The model and view are pulled into a controller and the core outputs the final HTML.   
+mFrame is an "anti" MVC PHP Framework.   Every other PHP framework out there (as far as I know) uses a central core script paired with server-side redirection to make it look as if there are different URLS when, in actuality, everything goes through the core.  Models, views and partials are pulled into a controller and the core outputs the final HTML.
 
-mFrame is different in that the "view" portion takes precedence and there is no need for the web server to perform redirection. Every view is it's own traditional, old-school php file. It is well suited to retro-fitting old sites.  It is also allows folks who deal with graphic designers or hands-on clients to deal with the front end in a more traditional manner.  Basically, your designers and clients can put up web pages just like they did back in the 2000's without having to wrap their head around traditional MVC concepts.
+mFrame is different in that the "view" portion takes precedence and there is no need for the web server to perform redirection. Every view is it's own traditional, old-school php file. It is well suited to retro-fitting old sites.  It is also allows folks who deal with graphic designers or hands-on clients to approach the front end in a more traditional manner--and by "traditional" I mean "super old school".  Basically, your designers and clients can create and edit web pages just like they did back in the day, without having to wrap their head around traditional MVC concepts.  They can just ignore the PHP bits as they go about editing CSS and JavaScript.
 
 Is this as efficient as a traditional MVC?  Almost.  Is it easier for the less savvy to understand and edit?  Arguably so.
 
 ##How To Use
-1) Create a stand-alone PHP page like you did back when you partied like it was 1999.  This is the view.
-2) Include the mFrame core and a controller class at the top of this page.
-3) The mFrame core calls a controller, model, and other resources as needed.
-4) Each page controller is a PHP5 class.  Output is stored as class properties.
-5) Stick the class properties into the stand-alone page ("the view") where needed.
+1 Create a stand-alone PHP page like you did back when everyone partied like it was 1999.  This is now the view.
+2 Include the mFrame core and a controller class at the top of this page before anything else.
+3 The mFrame core calls a controller, model, and other resources as needed.
+4 Each page controller is a PHP5 class.  Output is stored as class properties.
+5 Stick the class properties into the stand-alone page ("the view") where needed.
 
 ##Requires
 - PHP5.3 (Needed for late static binding and autoloading)
@@ -163,3 +163,7 @@ class exampleController
 This anti-framework was written to test a theory of mine.  It's currently in alpha status but I've used it on my own for
 fun projects.  I'm continuing to refine stuff and automating common code tasks by creating new core classes and methods.
 I would love it if you would help the project along by forking and improving mFrame.
+
+##Todo
+- Autoload a controller who's name is based on a pattern derived from the name of the current view.  So bob.php auto-loads a controller called bob_c.php
+- Document the heck out of everything
