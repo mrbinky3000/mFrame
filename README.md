@@ -88,7 +88,7 @@ For instance, stuff like "Session_Master" is used to repopulate an HTML form aft
  * of the global name space so there is no chance of collisions.
  * 
  * @subpackage controllers
- * @author Matthew Toledo <matthew.toledo@g####.com>
+ * @author Matthew Toledo
  */
 class exampleController
 {
